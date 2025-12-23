@@ -1,6 +1,8 @@
 
 -- query 1 
-select b.id as booking_id, u.name as customer_name,  v.name as vehicle_name, b.start_date, b.end_date, b.status from bookings as b join users u on b.user_id = u.id
+select b.id as booking_id, u.name as customer_name,  v.name as vehicle_name, b.start_date, b.end_date, b.status 
+from bookings as b 
+join users u on b.user_id = u.id
 join vehicles as v on b.vehicle_id = v.id
 
 -- query 2
