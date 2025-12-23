@@ -11,6 +11,28 @@ The system manages:
 - **Vehicles**
 - **Bookings**
 
+### Business Logic 
+
+Database design:
+
+#### Users Table:
+- User role (Admin or Customer)
+- Name, email, password, phone number
+- Each email must be unique (no duplicate accounts)
+
+#### Vehicles Table:
+- Vehicle name, type (car/bike/truck), model
+- Registration number (must be unique)
+- Rental price per day
+- Availability status (available/rented/maintenance)
+
+#### Bookings Table:
+- Which user made the booking (link to Users table)
+- Which vehicle was booked (link to Vehicles table)
+- Start date and end date of rental
+- Booking status (pending/confirmed/completed/cancelled)
+- Total cost of the booking
+
 # SQL Queries - Expected Outputs
 
 This document provides sample data and the expected outputs for the SQL queries defined in the assignment.
